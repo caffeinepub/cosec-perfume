@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Cosec Brand Palette — Purple/Lavender/Pink OKLCH */
+    /* Background: soft lavender-white */
+    --background: 0.97 0.015 300;
+    --foreground: 0.15 0.02 280;
+
+    /* Card */
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.02 280;
+
+    /* Popover */
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.02 280;
+
+    /* Primary purple */
+    --primary: 0.55 0.18 300;
+    --primary-foreground: 1 0 0;
+
+    /* Secondary lavender */
+    --secondary: 0.92 0.05 300;
+    --secondary-foreground: 0.15 0.02 280;
+
+    /* Muted */
+    --muted: 0.95 0.03 300;
+    --muted-foreground: 0.5 0.04 290;
+
+    /* Accent mauve */
+    --accent: 0.9 0.07 320;
+    --accent-foreground: 0.15 0.02 280;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+
+    /* Border */
+    --border: 0.88 0.04 300;
+    --input: 0.88 0.04 300;
+    --ring: 0.55 0.18 300;
+
+    /* Charts */
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.15 300;
+    --chart-3: 0.5 0.18 320;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 310;
+
+    /* Sidebar */
+    --sidebar: 0.93 0.05 300;
+    --sidebar-foreground: 0.15 0.02 280;
+    --sidebar-primary: 0.55 0.18 300;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.88 0.07 320;
+    --sidebar-accent-foreground: 0.15 0.02 280;
+    --sidebar-border: 0.85 0.05 300;
+    --sidebar-ring: 0.55 0.18 300;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Poppins", sans-serif;
+  }
+}
